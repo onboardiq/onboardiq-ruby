@@ -25,9 +25,7 @@ Or install it yourself as:
 
   Create a new file in config/initializers/onboardiq.rb
   ```Ruby
-  OnboardIQ.configure do |c|
-    c.token   = "123l4cva_mdlkVamk31" #account api token from OnboardIQ
-  end
+    ONBOARDIQ  = OnboardIQ.new(token: "123l4cva_mdlkVamk31") #account api token from OnboardIQ
   ```
 
 **Create Applicant**
@@ -41,33 +39,33 @@ Or install it yourself as:
 
   ```Ruby
   # minimum
-  OnboardIQ.create_applicant(name: "Dwight Schrute", email: "dwight@dundermifflin.com", phone_number: "1112223333")
+  ONBOARDIQ.create_applicant(name: "Dwight Schrute", email: "dwight@dundermifflin.com", phone_number: "1112223333")
 
   # optional info
-  OnboardIQ.create_applicant(name: "Dwight Schrute", email: "dwight@dundermifflin.com", phone_number: "1112223333", any: "other", keys: "you want", address[street]: "123 main st", address[city]: "San Francisco, CA")
+  ONBOARDIQ.create_applicant(name: "Dwight Schrute", email: "dwight@dundermifflin.com", phone_number: "1112223333", any: "other", keys: "you want", address[street]: "123 main st", address[city]: "San Francisco, CA")
   ```
 
 **Update Applicant**
   
 
   ```Ruby
-  OnboardIQ.update_applicant(applicant_key, attributes)
+  ONBOARDIQ.update_applicant(applicant_key, attributes)
 
   # example
-  OnboardIQ.update_applicant("deb3648f", availability: "monday, tuesday", location: "SF")  
+  ONBOARDIQ.update_applicant("deb3648f", availability: "monday, tuesday", location: "SF")  
   ```
 
 **List Applicants**
   
   ```Ruby
-  OnboardIQ.list_applicants
+  ONBOARDIQ.list_applicants
   ```
 
 **Get Applicant**
 
   ```Ruby
-  OnboardIQ.get_applicant(applicant_key)
+  ONBOARDIQ.get_applicant(applicant_key)
 
   # example
-  OnboardIQ.get_applicant("deb3648f")  
+  ONBOARDIQ.get_applicant("deb3648f")  
   ```
