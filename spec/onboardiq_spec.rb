@@ -48,27 +48,6 @@ describe OnboardIQ do
       response = client.create_applicant(new_applicant)
       expect(response).to be_a(Applicant)
     end
-
-    # it 'passes the correct applicant parameters' do
-    #   expect(OnboardIQ).to receive(:post).with(an_instance, an_instance_of(Hash))
-
-    #   client.create_applicant(new_applicant)
-    # end
-
   end
-
-  # describe '.update_applicant; Update: PUT /applicants/:id' do
-  #   it 'fetches the correct url' do
-  #     expect(OnboardIQ).to receive(:get).with("/#{client.version}/applicants", an_instance_of(Hash))
-  #     client.list_applicants
-  #   end
-  # end
-
-  # describe '.get_applicant; Show: GET /applicants/:id' do
-  #   it 'fetches the correct url' do
-  #     expect(OnboardIQ).to receive(:get).with("/#{client.version}/applicant", an_instance_of(Hash))
-  #     client.list_applicants
-  #   end
-  # end
 
 end
