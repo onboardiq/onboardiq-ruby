@@ -4,7 +4,7 @@ require 'onboardiq'
 describe OnboardIQ do
 
 
-  let(:client) { OnboardIQ.new(token: '1uiDl1c_vamXb42FCjiUrw') }
+  let(:client) { OnboardIQ.new(token: '[API_TOKEN]') }
 
   describe 'initialization' do
     it 'saves the api token' do
