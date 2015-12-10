@@ -6,7 +6,7 @@ For V2 documentation, please refer to: https://onboardiq.com/docs/apiv2/
 
 # OnboardIQ API
 
-This is a Ruby wrapper to quickly use OnboardIQ's API.
+This is a Ruby wrapper to quickly use OnboardIQ's API V1: https://onboardiq.readme.io/v1.0.
 
 
 ## Installation
