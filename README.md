@@ -1,3 +1,8 @@
+# Note: This gem is for API v1, which is gracefully supported but does not include many of the new API calls. 
+For V2 documentation, please refer to: https://onboardiq.com/docs/apiv2/ 
+
+=====================
+
 # OnboardIQ API
 
 This is a Ruby wrapper to quickly use OnboardIQ's API.
