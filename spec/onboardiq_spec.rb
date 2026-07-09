@@ -4,7 +4,7 @@ require 'onboardiq'
 describe OnboardIQ do
 
 
-  let(:client) { OnboardIQ.new(token: '[API_TOKEN]') }
+  let(:client) { OnboardIQ.new(token: 'abcdef') }
 
   describe 'initialization' do
     it 'saves the api token' do
@@ -44,9 +44,9 @@ describe OnboardIQ do
       client.create_applicant(new_applicant)
     end
 
-    it 'returns an array of applicants' do
+    it 'returns a hash response' do
       response = client.create_applicant(new_applicant)
-      expect(response).to be_a(Applicant)
+      expect(response).to be_a(Hash)
     end
   end
 
